@@ -1,0 +1,160 @@
+/* Обнуление базовых стилей и шрифты */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* Контейнер письма (Ширина 640px как на макете) */
+.email-container {
+    width: 640px;
+    background-color: #151515; /* Темный фон самого письма */
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Шапка с фоном #313131 и высотой 72px */
+.header {
+    width: 640px;
+    height: 72px;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+/* Главная секция */
+.main-content {
+    padding: 60px 40px 40px 40px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+}
+
+.buy-link {
+    color: #0071e3; /* Фирменный голубой цвет Apple */
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.buy-link:hover {
+    text-decoration: underline;
+}
+
+/* Изображение */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 60px auto;
+}
+
+/* Сетка со статистикой */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #86868b;
+    font-weight: 600;
+}
+
+.stat-value {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 4px 0;
+}
+
+.stat-desc {
+    font-size: 12px;
+    color: #86868b;
+    line-height: 1.3;
+    min-height: 32px; /* Чтобы текст не ломал выравнивание линеек */
+}
+
+/* Оранжевая полоска снизу */
+.stat-line {
+    width: 60px;
+    height: 3px;
+    background-color: #f56300; /* Градиентный оранжевый Apple */
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+/* Подвал (Footer) */
+.footer {
+    background-color: #151515;
+    padding: 40px 60px;
+    border-top: 1px solid #333333; /* Небольшое разделение */
+}
+
+/* Социальные иконки (заглушки) */
+.social-icons {
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    color: #86868b;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 12px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+/* Текст оферты */
+.footer p {
+    font-size: 11px;
+    color: #86868b;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.footer p a {
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
